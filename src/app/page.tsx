@@ -1,88 +1,16 @@
 import React from 'react';
-import Image from 'next/image';
-interface HomeProps {
+
+interface HoverProps {
   
 }
 
-const Home = ({  }: HomeProps) => {
+const Hover = ({  }: HoverProps) => {
   return (
-    <div className='columns-1'>
-      <Image
-        src="/image1.jpg"
-        alt="image"
-         height={500}
-         width={500}
-    
-      
-         className="w-full  aspect-video hover:aspect-square max-sm:aspect-square"
-      />
-            <Image
-        src="/image7.jpg"
-        alt="image"
-        height={1000}
-        width={1000}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className="w-full h-auto aspect-video"
-       
-      />
-            <Image
-        src="/image1.jpg"
-        alt="image"
-        height={1000}
-        width={1000}
-        className="w-full h-auto aspect-video"
-        
-        
-       
-      />
-            <Image
-        src="/image4.jpg"
-        alt="image"
-        height={1000}
-        width={1000}
-        
-        className="w-full h-auto aspect-video"
-       
-      />
-            <Image
-        src="/image5.jpg"
-        alt="image"
-        height={1000}
-        width={1000}
-        
-        className="w-full h-auto aspect-video"
-       
-      />
-            <Image
-        src="/image6.jpg"
-        alt="image"
-        height={1000}
-        width={1000}
-        
-        className="w-full h-auto aspect-video"
-       
-      />
-            <Image
-        src="/image7.jpg"
-        alt="image"
-        height={1000}
-        width={1000}
-        
-        className="w-full h-auto aspect-video"
-       
-      />
-            <Image
-        src="/image8.jpg"
-        alt="image"
-        height={1000}
-        width={1000}
-        
-        className="w-full h-auto aspect-video"
-       
-      />
-      
+    <div className="grid place-items-center h-full w-fu bg-blue-400 hover:bg-purple-400 group" >
+    <div className='h-5 w-5 bg-black group-hover:bg-red-600'></div>
+      <div className='h-5 w-5 bg-black group-hover:bg-blue-600'></div>
     </div>
   );
 };
 
-export default Home;
+export default Hover;
